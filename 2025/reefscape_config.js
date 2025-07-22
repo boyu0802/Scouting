@@ -12,10 +12,10 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
+    { "name": "EEEvent",
       "code": "e",
       "type": "event",
-      "defaultValue": ":)",
+      "defaultValue": "WOW",
       "required": "true"
     },
     { "name": "Match Level",
