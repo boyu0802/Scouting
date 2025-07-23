@@ -8,11 +8,11 @@ var config_data = `
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
-      "size": 5,
-      "maxSize": 5,
+      "size": 20,
+      "maxSize": 20,
       "required": "true"
     },
-    { "name": "EEEvent",
+    { "name": "Event",
       "code": "e",
       "type": "event",
       "defaultValue": "WOW",
@@ -54,6 +54,15 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
+    },
+    { "name": "Auto Start Position",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2025/half_field.png",
+      "clickRestriction": "one",
+      "dimensions": "6 6",
+      "allowableResponses": "1 7 13 19 25 31",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -76,14 +85,6 @@ var config_data = `
     { "name": "Coral L4",
       "code": "ac4",
       "type": "counter"
-    },
-    { "name": "Auto Scoring Position",
-      "code": "asp",
-      "type": "clickable_image",
-      "filename": "2025/reef.png",
-      "dimensions": "6 6",
-      "allowableResponses": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 17 18 19 20 23 24 25 26 27 28 29 30 31 32 33 34 35 36",
-      "shape": "circle 5 black red true"
     },
     { "name": "Processor Score",
       "code": "aps",
@@ -123,7 +124,7 @@ var config_data = `
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Coral Station<br>",
+        "cs": "Coral Station<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
@@ -133,9 +134,7 @@ var config_data = `
     { "name": "Scored in<br>Opponent<br>Processor",
       "code": "opp",
       "type": "bool"
-    }
-  ],
-  "endgame": [
+    },
     { "name": "Barge Timer",
       "code": "ebt",
       "type": "timer"
@@ -144,14 +143,16 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "bp": "Parked<br>",
-        "ba": "Parked/Failed Climb<br>",
-        "bs": "Shallow Cage<br>",
-        "bd": "Deep Cage<br>",
-        "x": "Not attempted"
+        "p": "Parked<br>",
+        "fc": "Parked/Failed Climb<br>",
+        "sc": "Shallow Cage<br>",
+        "dc": "Deep Cage<br>",
+        "x": "Not Attempted"
       },
       "defaultValue": "x"
     }
+  ],
+  "endgame": [
   ],
   "postmatch": [
     { "name": "Attained Coopertition Pt",
@@ -214,11 +215,6 @@ var config_data = `
     },
     { "name": "Dropped Algae (>2)",
       "code": "da",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
