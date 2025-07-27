@@ -19,6 +19,10 @@ var config_data = `
       "type": "number",
       "defaultValue": "0"
     },
+    { "name": "Units",
+      "code": "uni",
+      "
+    }
     { "name": "Drivetrain",
       "code": "drv",
       "type": "radio",
@@ -57,13 +61,11 @@ var config_data = `
         "n": "Neo<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
+        "v": "Vortex<br>",
+        "k": "Kraken<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
-    },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
     },
     { "name": "Floor pickup Coral",
       "code": "fpu",
