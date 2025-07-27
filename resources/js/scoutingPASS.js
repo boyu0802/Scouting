@@ -921,11 +921,15 @@ function clearForm() {
   if (pitScouting) {
     swipePage(-1);
   } else {
-    swipePage(-4);
+    slide = 0;
+    let slides = document.getElementById("main-panel-holder").children;
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slides[slide].style.display = "table";
+    window.scrollTo(0, 0);;
 
     // Increment match
     match = parseInt(document.getElementById("input_m").value)
-    if (match == NaN) {
+    if (isNaN(match)) {
       document.getElementById("input_m").value = ""
     } else {
       document.getElementById("input_m").value = match + 1
