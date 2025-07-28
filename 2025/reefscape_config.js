@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "WOW",
+      "defaultValue": "2020ilch",
       "required": "true"
     },
     { "name": "Match Level",
