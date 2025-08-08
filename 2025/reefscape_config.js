@@ -62,59 +62,112 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Coral L1",
-      "code": "ac1",
+    { "name": "Coral L1 Success",
+      "code": "ac1s",
       "type": "counter"
     },
-    { "name": "Coral L2",
-      "code": "ac2",
+    { "name": "Coral L1 Fail",
+      "code": "ac1f",
       "type": "counter"
     },
-    { "name": "Coral L3",
-      "code": "ac3",
+    { "name": "Coral L2 Success",
+      "code": "ac2s",
+      "type": "counter"
+    },    
+    { "name": "Coral L2 Fail",
+      "code": "ac2f",
       "type": "counter"
     },
-    { "name": "Coral L4",
-      "code": "ac4",
+    { "name": "Coral L3 Success",
+      "code": "ac3s",
+      "type": "counter"
+    },
+    { "name": "Coral L3 Fail",
+      "code": "ac3f",
+      "type": "counter"
+    },
+    { "name": "Coral L4 Success",
+      "code": "ac4s",
+      "type": "counter"
+    },
+    { "name": "Coral L4 Fail",
+      "code": "ac4f",
       "type": "counter"
     },
     { "name": "Processor Score",
       "code": "aps",
       "type": "counter"
     },
-    { "name": "Net Score",
-      "code": "ans",
+    { "name": "Robot Net Score Success",
+      "code": "arnss",
+      "type": "counter"
+    },
+    { "name": "Robot Net Score Fail",
+      "code": "arnsf",
+      "type": "counter"
+    },
+    { "name": "Human Net Score Success",
+      "code": "ahnss",
+      "type": "counter"
+    },
+    { "name": "Human Net Score Fail",
+      "code": "ahnsf",
       "type": "counter"
     }
+
+    
   ],
   "teleop": [
-    { "name": "Coral L1",
-      "code": "tc1",
+{ "name": "Coral L1 Success",
+      "code": "tc1s",
       "type": "counter"
     },
-    { "name": "Coral L2",
-      "code": "tc2",
+    { "name": "Coral L1 Fail",
+      "code": "tc1f",
       "type": "counter"
     },
-    { "name": "Coral L3",
-      "code": "tc3",
+    { "name": "Coral L2 Success",
+      "code": "tc2s",
+      "type": "counter"
+    },    
+    { "name": "Coral L2 Fail",
+      "code": "tc2f",
       "type": "counter"
     },
-    { "name": "Coral L4",
-      "code": "tc4",
+    { "name": "Coral L3 Success",
+      "code": "tc3s",
+      "type": "counter"
+    },
+    { "name": "Coral L3 Fail",
+      "code": "tc3f",
+      "type": "counter"
+    },
+    { "name": "Coral L4 Success",
+      "code": "tc4s",
+      "type": "counter"
+    },
+    { "name": "Coral L4 Fail",
+      "code": "tc4f",
       "type": "counter"
     },
     { "name": "Processor Score",
       "code": "tps",
       "type": "counter"
     },
-    { "name": "Net Score",
-      "code": "tns",
+    { "name": "Robot Net Score Success",
+      "code": "trnss",
       "type": "counter"
     },
-    {
-      "name":"Net Tries",
-      "code": "nts",
+    { "name": "Robot Net Score Fail",
+      "code": "trnsf",
+      "type": "counter"
+    },
+    { "name": "Human Net Score Success",
+      "code": "thnss",
+      "type": "counter"
+    },
+    { "name": "Human Net Score Fail",
+      "code": "thnsf",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -217,7 +270,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 100
     }
   ]
 }`;
