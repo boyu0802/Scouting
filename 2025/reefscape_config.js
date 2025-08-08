@@ -22,9 +22,9 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "x": "TEST<br>"
+        "x": "TEST<br>",
         "p": "Practice<br>",
-        "qm": "Quals<br>",
+        "qm": "Quals<br>"
       },
       "defaultValue": "qm",
       "required": "true"
