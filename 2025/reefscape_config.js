@@ -98,6 +98,10 @@ var config_data = `
       "code": "aps",
       "type": "counter"
     },
+    { "name": "Processor Fail",
+      "code": "apf",
+      "type": "counter"
+    },
     { "name": "Robot Net Score Success",
       "code": "arnss",
       "type": "counter"
@@ -152,6 +156,10 @@ var config_data = `
     },
     { "name": "Processor Score",
       "code": "tps",
+      "type": "counter"
+    },
+    { "name": "Processor Fail",
+      "code": "tpf",
       "type": "counter"
     },
     { "name": "Robot Net Score Success",
