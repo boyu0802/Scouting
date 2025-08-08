@@ -112,6 +112,11 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
+    {
+      "name":"Net Tries",
+      "code": "nts",
+      "type": "counter"
+    },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
