@@ -5,11 +5,11 @@ var config_data = `
   "page_title": "REEFSCAPE",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter Name",
       "code": "s",
       "type": "scouter",
       "size": 20,
-      "maxSize": 20,
+      "maxSize": 50,
       "required": "true"
     },
     { "name": "Event",
@@ -22,7 +22,7 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "x": "TEST<br>",
+        "x": "Test<br>",
         "p": "Practice<br>",
         "qm": "Quals<br>"
       },
