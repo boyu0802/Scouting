@@ -102,19 +102,19 @@ var config_data = `
       "code": "apf",
       "type": "counter"
     },
-    { "name": "Robot Net Score Success",
+    { "name": "Robot Net Success",
       "code": "arnss",
       "type": "counter"
     },
-    { "name": "Robot Net Score Fail",
+    { "name": "Robot Net Fail",
       "code": "arnsf",
       "type": "counter"
     },
-    { "name": "Human Net Score Success",
+    { "name": "Human Net Success",
       "code": "ahnss",
       "type": "counter"
     },
-    { "name": "Human Net Score Fail",
+    { "name": "Human Net Fail",
       "code": "ahnsf",
       "type": "counter"
     }
@@ -162,19 +162,19 @@ var config_data = `
       "code": "tpf",
       "type": "counter"
     },
-    { "name": "Robot Net Score Success",
+    { "name": "Robot Net Success",
       "code": "trnss",
       "type": "counter"
     },
-    { "name": "Robot Net Score Fail",
+    { "name": "Robot Net Fail",
       "code": "trnsf",
       "type": "counter"
     },
-    { "name": "Human Net Score Success",
+    { "name": "Human Net Success",
       "code": "thnss",
       "type": "counter"
     },
-    { "name": "Human Net Score Fail",
+    { "name": "Human Net Fail",
       "code": "thnsf",
       "type": "counter"
     },
@@ -202,7 +202,8 @@ var config_data = `
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "fc": "Parked/Failed Climb<br>",
+        "fsc": "Parked/Failed Shallow Cage<br>",
+        "fdc": "Parked/Failed Deep Cage<br>",
         "sc": "Shallow Cage<br>",
         "dc": "Deep Cage<br>",
         "x": "Not Attempted"
