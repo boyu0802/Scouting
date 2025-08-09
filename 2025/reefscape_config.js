@@ -49,6 +49,11 @@ var config_data = `
       },
       "required":"true"
     },
+    {
+      "name": "Human Player at Processor",
+      "code": "hp",
+      "type": "bool"
+    },
     { "name": "Team #",
       "code": "t",
       "type": "team",
