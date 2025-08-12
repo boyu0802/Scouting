@@ -99,7 +99,7 @@ var config_data = `
       "code": "ac4f",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Processor Success",
       "code": "aps",
       "type": "counter"
     },
@@ -149,7 +149,7 @@ var config_data = `
       "code": "tc4f",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Processor Success",
       "code": "tps",
       "type": "counter"
     },
