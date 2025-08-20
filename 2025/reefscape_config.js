@@ -99,7 +99,7 @@ var config_data = `
       "code": "ac4f",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Processor Success",
       "code": "aps",
       "type": "counter"
     },
@@ -114,17 +114,7 @@ var config_data = `
     { "name": "Robot Net Fail",
       "code": "arnsf",
       "type": "counter"
-    },
-    { "name": "Human Net Success",
-      "code": "ahnss",
-      "type": "counter"
-    },
-    { "name": "Human Net Fail",
-      "code": "ahnsf",
-      "type": "counter"
-    }
-
-    
+    } 
   ],
   "teleop": [
 { "name": "Coral L1 Success",
@@ -159,7 +149,7 @@ var config_data = `
       "code": "tc4f",
       "type": "counter"
     },
-    { "name": "Processor Score",
+    { "name": "Processor Success",
       "code": "tps",
       "type": "counter"
     },
@@ -173,14 +163,6 @@ var config_data = `
     },
     { "name": "Robot Net Fail",
       "code": "trnsf",
-      "type": "counter"
-    },
-    { "name": "Human Net Success",
-      "code": "thnss",
-      "type": "counter"
-    },
-    { "name": "Human Net Fail",
-      "code": "thnsf",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -235,7 +217,9 @@ var config_data = `
       "type": "radio",
       "choices": {
         "n": "Not Effective<br>",
+        "m": "mid<br>",
         "a": "Average<br>",
+        "e": "Effective<br>",
         "v": "Very Effective<br>"
       },
       "defaultValue": "a"
@@ -272,11 +256,11 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Coral (>2)",
+    { "name": "Dropped Coral (>=2)",
       "code": "dc",
       "type": "bool"
     },
-    { "name": "Dropped Algae (>2)",
+    { "name": "Dropped Algae (>=2)",
       "code": "da",
       "type": "bool"
     },
@@ -284,7 +268,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 100
+      "maxSize": 200
     }
   ]
 }`;
