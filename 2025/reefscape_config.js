@@ -24,7 +24,8 @@ var config_data = `
       "choices": {
         "x": "Test<br>",
         "p": "Practice<br>",
-        "qm": "Quals<br>"
+        "qm": "Quals<br>",
+        "po": "Playoffs<br>"
       },
       "defaultValue": "qm",
       "required": "true"
@@ -201,6 +202,13 @@ var config_data = `
   "endgame": [
   ],
   "postmatch": [
+    {"name": "Defended by Team:",
+      "code": "def",
+      "type": "number",
+      "min": 0,
+      "max": 20000,
+      "defaultValue": 0
+    },
     { "name": "Attained Coopertition Pt",
       "code": "cop",
       "type": "bool"
